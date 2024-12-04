@@ -458,7 +458,7 @@
             return e.return(navigator.mediaDevices.getUserMedia({
                 video: {
                     facingMode: b.facingMode,
-                    frameRate:30,
+                    frameRate: { ideal: 30, max: 30 }
                     width: b.width,
                     height: b.height
                 }
