@@ -468,6 +468,7 @@
                 var h = "Failed to acquire camera feed: " + f;
                 console.error(h);
                 alert(h);
+                alert(h);
                 throw f;
             }))
         })))
