@@ -430,7 +430,7 @@
         return a || K
     });
     var L = this || self;
-    var M = {facingMode: "user", width: 640, height: 480};
+    var M = {facingMode: "user", width: 640, height: 480, frameRate: {min: 30, ideal: 30}};
 
     function N(a, b) {
         this.video = a;
@@ -458,8 +458,8 @@
             return e.return(navigator.mediaDevices.getUserMedia({
                 video: {
                     facingMode: b.facingMode,
-                    frameRate: { ideal: 30, max: 30 },
                     width: b.width,
+                    frameRate: {min: 30, ideal: 30},
                     height: b.height
                 }
             }).then(function (f) {
